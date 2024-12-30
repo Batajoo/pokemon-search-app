@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Search App</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="main-container"> 
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="Pokemon Logo" class="logo">
+      <section class="input">
+        <input type="text" class="search-input" id="search-input" 
+        placeholder="Enter Pokemon name or number..." required>
+        <button id="search-button" class="search-button">Search</button>
+      </section>
+      
+      <section class="card-container">
+        <div class="card hide-card" id="card">
+        <div class="pokemon-card">
+          <div class="card-header">
+            <h1 id="pokemon-name" class="pokemon-name"></h1>
+            <h2 class="header-hp">HP <span class="hp" id="hp"></span></h2>
+          </div>
+          <div class="body-details">
+            <p>Weight:<span id="weight"></span></p>
+            <p>Height:<span id="height"></span></p>
+          </div>
+
+          <div class="type-badges" id="types">
+          </div>
+
+          <div class="pokemon-img-container">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png" class="pokemon-img" id="pokemon-img">
+          </div>
+
+          <div class="card-stats">
+          </div>
+
+          <div class="card-id">
+            #<span id="pokemon-id">150</span>
+          </div>
+          <div class="holographic-effect"></div>
+        </div>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
